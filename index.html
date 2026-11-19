@@ -35,6 +35,13 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
 .video-card figcaption{margin:0;padding:.75rem 1rem 1rem}
 .video-card figcaption strong{display:block;color:var(--ink);font-size:1rem}
 .video-card figcaption a{display:inline-block;margin-top:.3rem}
+.local-photo strong{color:var(--ink);font-size:.95rem}
+.photo-link{display:block;cursor:zoom-in}
+.photo-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:.8rem}
+.photo-details .photo{background:#e9ebe3}
+.photo-details img{max-height:420px}
+.photo-details .ferrata-photo img{max-height:510px}
+@media(max-width:600px){.photo-details{grid-template-columns:1fr}.photo-details img{max-height:none}.photo-details .ferrata-photo img{max-height:540px}}
 </style>
 </head>
 <body>
@@ -61,15 +68,26 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
   <h2>Rudawy a Sokoliki</h2>
   <p class="intro">V pátek bychom se rozlezli v Sokolikách. V sobotu buď zůstaneme v oblasti, nebo vybereme další sektor v Rudawách podle toho, kde bude skála suchá. Na žule si můžeme vybrat sportovně odjištěné linky i spáry na vlastní jištění.</p>
   <div class="layout">
-    <figure>
-      <div class="photo sokol"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Sokolik-PunktWidokowy.jpg" alt="Žulové skály a vyhlídka na Sokoliku v Rudawách" width="3072" height="1427" loading="lazy"></div>
-      <figcaption>Sokolik · <a href="https://commons.wikimedia.org/wiki/File:Sokolik-PunktWidokowy.jpg">Biedrek</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+    <figure class="local-photo panorama">
+      <a class="photo photo-link" href="https://upload.wikimedia.org/wikipedia/commons/6/6f/Krzy%C5%BCna_G%C3%B3ra_i_Sokolik_Du%C5%BCy_widziane_z_Prze%C5%82%C4%99czy_Karpnickiej.jpg" aria-label="Zobrazit fotografii v plné velikosti – Krzyżna Góra a Sokolik Duży z Przełęczy Karpnické"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Krzy%C5%BCna_G%C3%B3ra_i_Sokolik_Du%C5%BCy_widziane_z_Prze%C5%82%C4%99czy_Karpnickiej.jpg/1280px-Krzy%C5%BCna_G%C3%B3ra_i_Sokolik_Du%C5%BCy_widziane_z_Prze%C5%82%C4%99czy_Karpnickiej.jpg" alt="Dva zalesněné vrcholy Góry Sokole nad krajinou u Karpnik" width="4048" height="2699" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/6/6f/Krzy%C5%BCna_G%C3%B3ra_i_Sokolik_Du%C5%BCy_widziane_z_Prze%C5%82%C4%99czy_Karpnickiej.jpg'"></a>
+      <figcaption><strong>Krzyżna Góra a Sokolik Duży z Przełęczy Karpnické</strong><br><a href="https://commons.wikimedia.org/wiki/File:Krzy%C5%BCna_G%C3%B3ra_i_Sokolik_Du%C5%BCy_widziane_z_Prze%C5%82%C4%99czy_Karpnickiej.jpg">Aneta Pawska</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></figcaption>
     </figure>
     <div class="panel"><dl class="facts">
       <div><dt>Jízda z Děčína</dt><dd><strong>Asi 2,5–3 hodiny</strong> do Karpnik bez delších zastávek.<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=D%C4%9B%C4%8D%C3%ADn&amp;destination=Prze%C5%82%C4%99cz+Karpnicka%2C+Polska&amp;travelmode=driving">Trasa na Przełęcz Karpnickou</a></dd></div>
       <div><dt>Ubytování</dt><dd>Každý si rezervuje sám. Na jednu noc se nabízí <a href="https://schronisko-szwajcarka.pl/noclegi/">chata Szwajcarka</a> nebo <a href="https://meteor-turystyka.pl/noclegi%2Ctrzcinsko%2C0.html">pokoje a apartmány u Trzcińska</a>.</dd></div>
       <div><dt>Plánování cest</dt><dd><a href="https://openclimbing.org/en/relation/19481985">Topo Sokolik Duży</a> · <a href="#pocasi-polsko">Předpověď pro Sokoliki</a></dd></div>
     </dl></div>
+  </div>
+  <h3 class="media-title">Skály zblízka</h3>
+  <div class="photo-details">
+    <figure class="local-photo rock-photo">
+      <a class="photo photo-link" href="https://upload.wikimedia.org/wikipedia/commons/0/07/Sokoliki_-_Sukiennice.jpg" aria-label="Zobrazit fotografii v plné velikosti – Sukiennice · žulová stěna v Sokolikách"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Sokoliki_-_Sukiennice.jpg/960px-Sokoliki_-_Sukiennice.jpg" alt="Detail žulového masivu Sukiennice" width="4032" height="3024" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/0/07/Sokoliki_-_Sukiennice.jpg'"></a>
+      <figcaption><strong>Sukiennice · žulová stěna v Sokolikách</strong><br><a href="https://commons.wikimedia.org/wiki/File:Sokoliki_-_Sukiennice.jpg">Jvaclavik</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></figcaption>
+    </figure>
+    <figure class="local-photo rock-photo">
+      <a class="photo photo-link" href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Wspinaczka_ska%C5%82kowa_-_Sokolik.jpg" aria-label="Zobrazit fotografii v plné velikosti – Sokolik · lezení na žule"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Wspinaczka_ska%C5%82kowa_-_Sokolik.jpg/960px-Wspinaczka_ska%C5%82kowa_-_Sokolik.jpg" alt="Lezec na žule v Sokolikách" width="3072" height="2304" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/c/cc/Wspinaczka_ska%C5%82kowa_-_Sokolik.jpg'"></a>
+      <figcaption><strong>Sokolik · lezení na žule</strong><br><a href="https://commons.wikimedia.org/wiki/File:Wspinaczka_ska%C5%82kowa_-_Sokolik.jpg">Pitcairn2424</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+    </figure>
   </div>
   <h3 class="media-title">Lezení na videu</h3>
   <div class="videos">
@@ -88,15 +106,26 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
   <h2>Hohe Wand</h2>
   <p class="intro">Alespoň tři dny. Termín vybereme podle toho, kdy se nás sejde nejvíc. Na místě se můžeme rozdělit podle toho, kdo chce na ferratu, kdo na sportovky a kdo na delší cestu.</p>
   <div class="layout">
-    <figure>
-      <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Skywalk_auf_der_Hohen_Wand.jpg" alt="Vyhlídka Skywalk nad vápencovou stěnou Hohe Wand" width="2500" height="1614" loading="lazy"></div>
-      <figcaption>Skywalk na Hohe Wand · <a href="https://commons.wikimedia.org/wiki/File:Skywalk_auf_der_Hohen_Wand.jpg">Kstipek</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
+    <figure class="local-photo panorama">
+      <a class="photo photo-link" href="https://upload.wikimedia.org/wikipedia/commons/9/9f/Stollhof_from_Hohe_Wand.jpg" aria-label="Zobrazit fotografii v plné velikosti – Výhled z Hohe Wand na Stollhof a okolní kopce"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Stollhof_from_Hohe_Wand.jpg/1280px-Stollhof_from_Hohe_Wand.jpg" alt="Panoramatický pohled z Hohe Wand do údolí na Stollhof" width="6000" height="4000" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/9/9f/Stollhof_from_Hohe_Wand.jpg'"></a>
+      <figcaption><strong>Výhled z Hohe Wand na Stollhof a okolní kopce</strong><br><a href="https://commons.wikimedia.org/wiki/File:Stollhof_from_Hohe_Wand.jpg">Herzi Pinki</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
     </figure>
     <div class="panel"><dl class="facts">
       <div><dt>Jízda z Děčína</dt><dd><strong>Asi 5,5–6 hodin</strong> bez delších zastávek.<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=D%C4%9B%C4%8D%C3%ADn&amp;destination=Sonnenuhrparkplatz%2C+Hohe+Wand&amp;travelmode=driving">Trasa na Sonnenuhrparkplatz</a></dd></div>
       <div><dt>Ubytování</dt><dd>Každý si rezervuje sám. Nahoře je <a href="https://www.gasthof-postl.at/">Alpengasthof Postl</a>, pod stěnou lze hledat pokoje a apartmány v Maiersdorfu a Stollhofu. <a href="https://www.hohe-wand.gv.at/Freizeit_Tourismus/Gastronomie_Unterkuenfte/Unterkuenfte">Přehled ubytování v obci</a></dd></div>
       <div><dt>Podmínky</dt><dd><a href="#pocasi-rakousko">Předpověď pro Hohe Wand</a> · <a href="https://www.naturpark-hohewand.at/">Informace přírodního parku</a></dd></div>
     </dl></div>
+  </div>
+  <h3 class="media-title">Stěna a linie ferraty</h3>
+  <div class="photo-details">
+    <figure class="local-photo ferrata-photo">
+      <a class="photo photo-link" href="https://upload.wikimedia.org/wikipedia/commons/0/04/Verlauf_Matthias_Prinner-Klettersteig.jpg" aria-label="Zobrazit fotografii v plné velikosti – Matthias-Prinner-Klettersteig · zakreslená linie ferraty"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Verlauf_Matthias_Prinner-Klettersteig.jpg" alt="Vápencová stěna s vyznačeným průběhem ferraty Matthias-Prinner-Klettersteig" width="1395" height="1397" loading="lazy" decoding="async"></a>
+      <figcaption><strong>Matthias-Prinner-Klettersteig · zakreslená linie ferraty</strong><br><a href="https://commons.wikimedia.org/wiki/File:Verlauf_Matthias_Prinner-Klettersteig.jpg">LukasRoxas</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></figcaption>
+    </figure>
+    <figure class="local-photo ferrata-photo">
+      <a class="photo photo-link" href="https://upload.wikimedia.org/wikipedia/commons/0/0e/Leiter_-_Einstieg_Klettersteig.jpg" aria-label="Zobrazit fotografii v plné velikosti – Matthias-Prinner-Klettersteig · nástupový žebřík"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Leiter_-_Einstieg_Klettersteig.jpg" alt="Detail žebříku u nástupu ferraty na vápencovém pilíři" width="980" height="2016" loading="lazy" decoding="async"></a>
+      <figcaption><strong>Matthias-Prinner-Klettersteig · nástupový žebřík</strong><br><a href="https://commons.wikimedia.org/wiki/File:Leiter_-_Einstieg_Klettersteig.jpg">LukasRoxas</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></figcaption>
+    </figure>
   </div>
   <div class="routes">
     <article class="panel"><h3>Ferraty</h3><p><a href="https://www.bergsteigen.com/touren/klettersteig/frauenluckensteig-hohe-wand/">Frauenluckensteig (B)</a> má žebřík v asi 15metrové skalní šachtě. Pro zkušené je tu exponovaný <a href="https://www.bergsteigen.com/touren/klettersteig/gebirgsvereins-klettersteig/">Gebirgsvereinssteig (D)</a> s lanovým mostem.</p></article>
