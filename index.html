@@ -12,6 +12,24 @@
 header{background:var(--pine);color:white}.bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:72px;padding:.7rem 0}.mark{font-weight:800;letter-spacing:.04em;color:var(--lime)}nav{display:flex;flex-wrap:wrap;gap:.35rem 1.2rem}nav a{color:#f4f6ed;text-decoration:none}nav a:hover{text-decoration:underline}.hero{position:relative;isolation:isolate;display:grid;align-items:end;min-height:clamp(430px,63vw,650px);background:#304139}.hero img,.hero::after{position:absolute;inset:0;z-index:-1}.hero img{object-position:center 46%}.hero::after{content:"";background:linear-gradient(90deg,#131f19de,#131f197a 60%,#131f1924),linear-gradient(0deg,#101b16d9,transparent 75%)}.hero-copy{padding:4rem 0 3rem}.eyebrow{font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--accent);margin-bottom:.8rem}.hero .eyebrow,.join .eyebrow{color:var(--lime)}.hero p:not(.eyebrow){max-width:37rem;font-size:clamp(1.08rem,2vw,1.32rem);margin-top:1.25rem;color:#f5f7ef}.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.45rem}.button{display:inline-flex;align-items:center;min-height:45px;padding:.52rem .95rem;font-weight:700;text-decoration:none;color:var(--pine);background:var(--lime);border-radius:7px}.button:hover{background:#e7f6c4}.hero-credit{padding:.25rem 0 .45rem;background:#131f19;font-size:.82rem;color:#d9e4d9}.hero-credit a,.join a{color:var(--lime)}
 main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;border-bottom:1px solid var(--line)}.intro{max-width:46rem;color:var(--muted);font-size:1.12rem;margin-top:1rem}.layout{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);gap:clamp(1.2rem,4vw,3rem);align-items:start;margin-top:2rem}.photo{height:clamp(240px,37vw,395px);overflow:hidden;border-radius:var(--radius);background:#d5dfcd}.photo.sokol img{object-position:48% 50%}figcaption{font-size:.86rem;color:var(--muted);margin:.45rem .2rem 0}.panel{border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1rem,2.7vw,1.75rem);background:var(--paper)}.facts{display:grid;gap:1rem;margin:0}.facts dt{font-size:.88rem;font-weight:750;color:var(--muted)}.facts dd{margin:.12rem 0 0}.facts dd a{display:inline-block;margin-top:.28rem}.label{display:block;color:var(--muted);font-weight:700;font-size:.86rem}.routes,.gear-grid,.weather-grid,.videos{display:grid;gap:1rem;margin-top:1.35rem}.routes,.gear-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.routes p,.gear-grid p{margin-top:.4rem}.videos,.weather-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.video{border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;display:block;background:var(--paper);text-decoration:none}.video strong{font-weight:750;text-decoration:underline;text-underline-offset:.22em}.video:hover{border-color:var(--accent);background:#f0f5e9}.media-title{margin-top:1.65rem}.notes{margin-top:1rem;color:var(--muted)}.checklist{display:grid;gap:.55rem;padding:0;list-style:none;margin:.65rem 0 0}.checklist label{display:flex;align-items:flex-start;gap:.62rem;cursor:pointer}.checklist input{margin:.33em 0 0;flex:none;width:1.12rem;height:1.12rem;accent-color:var(--accent)}.checklist input:checked+span{color:var(--muted);text-decoration:line-through}.status{margin:.65rem 0;font-size:.91rem;color:var(--muted)}.forecast-wrap{overflow-x:auto}.forecast{width:100%;border-collapse:collapse;text-align:left;font-variant-numeric:tabular-nums;font-size:.91rem}.forecast th,.forecast td{border-bottom:1px solid var(--line);padding:.5rem .25rem;white-space:nowrap}.forecast td:nth-child(n+2),.forecast thead th:nth-child(n+2){text-align:right}.forecast tr.trip{background:#edf4dd}.weather-links{margin-top:.9rem}.join{background:var(--pine);color:#f7f7ef}.join p:not(.eyebrow){max-width:46rem;margin-top:1rem}.join ul{padding-left:1.35rem;margin:.7rem 0 0}.join .button{color:var(--pine)}footer{background:#131f19;color:#d9e4d9;padding:1.1rem 0;font-size:.9rem}
 @media(max-width:800px){.routes,.gear-grid{grid-template-columns:1fr}.layout{gap:1.2rem}}@media(max-width:640px){.bar{align-items:flex-start;flex-direction:column;gap:.45rem}.wrap{width:calc(100% - 1.75rem)}.layout,.weather-grid,.videos{grid-template-columns:1fr}.hero img{object-position:58% 50%}.hero::after{background:linear-gradient(0deg,#101b16ed,#131f1955 85%)}.hero-copy{padding-bottom:2rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,footer,.videos,.button,.skip{display:none}.section{padding:1rem 0;break-inside:avoid}.join{color:var(--ink);background:white}.join a,.join .eyebrow{color:var(--ink)}}
+/* Keep the photographs at their original aspect ratio. */
+.hero{grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);align-items:stretch;min-height:0;background:var(--pine)}
+.hero::after{display:none}
+.hero > img{position:static;z-index:auto;grid-column:2;grid-row:1;align-self:center;width:100%;height:auto;object-fit:contain}
+.hero-copy{grid-column:1;grid-row:1;width:auto;margin:0;align-self:center;padding:clamp(1.75rem,4vw,4rem) 1.5rem clamp(1.75rem,4vw,4rem) max(1rem,calc((100vw - 1120px)/2))}
+.hero h1{font-size:clamp(2.8rem,5.5vw,6.1rem)}
+.hero-credit{text-align:right}
+.layout{grid-template-columns:minmax(0,1fr)}
+.layout .facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+.photo{height:auto}
+.photo img{height:auto;object-fit:contain}
+@media(max-width:700px){
+  .hero{grid-template-columns:1fr}
+  .hero-copy,.hero > img{grid-column:1;grid-row:auto}
+  .hero-copy{grid-row:1}
+  .hero-credit{text-align:left}
+}
+@media(max-width:640px){.layout .facts{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -22,15 +40,15 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
     <nav aria-label="Obsah pozvánky"><a href="#polsko">Polsko</a><a href="#rakousko">Hohe Wand</a><a href="#vybaveni">Vybavení</a><a href="#pocasi">Počasí</a><a href="#zajem">Mám zájem</a></nav>
   </div>
   <div class="hero">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Hohe_Wand_bei_Stollhof_01.jpg" alt="Vápencové stěny Hohe Wand nad Stollhofem" width="1600" height="1060" fetchpriority="high">
-    <div class="wrap hero-copy">
+    <div class="hero-copy">
       <p class="eyebrow">Oddílové výjezdy 2027</p>
       <h1>Ze Sokolik<br>na Hohe Wand</h1>
       <p>Ahoj všichni, na Velikonoce bychom vyrazili na dva dny na polskou žulu. V létě si dáme aspoň tři dny na rakouském vápenci, kde můžeme střídat ferraty, jednodélky a vícedélky.</p>
       <div class="actions"><a class="button" href="#polsko">Velikonoce v Polsku</a><a class="button" href="#rakousko">Léto na Hohe Wand</a></div>
     </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Hohe_Wand_bei_Stollhof_01.jpg" alt="Vápencové stěny Hohe Wand nad Stollhofem" width="1600" height="1060" fetchpriority="high">
   </div>
-  <div class="hero-credit"><div class="wrap">Hohe Wand od Stollhofu · <a href="https://commons.wikimedia.org/wiki/File:Hohe_Wand_bei_Stollhof_01.jpg">Doronenko</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · zobrazeno s výřezem</div></div>
+  <div class="hero-credit"><div class="wrap">Hohe Wand od Stollhofu · <a href="https://commons.wikimedia.org/wiki/File:Hohe_Wand_bei_Stollhof_01.jpg">Doronenko</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div>
 </header>
 <main id="obsah">
 <section id="polsko" class="section"><div class="wrap">
@@ -40,7 +58,7 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
   <div class="layout">
     <figure>
       <div class="photo sokol"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Sokolik-PunktWidokowy.jpg" alt="Žulové skály a vyhlídka na Sokoliku v Rudawách" width="3072" height="1427" loading="lazy"></div>
-      <figcaption>Sokolik · <a href="https://commons.wikimedia.org/wiki/File:Sokolik-PunktWidokowy.jpg">Biedrek</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · zobrazeno s výřezem</figcaption>
+      <figcaption>Sokolik · <a href="https://commons.wikimedia.org/wiki/File:Sokolik-PunktWidokowy.jpg">Biedrek</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
     </figure>
     <div class="panel"><dl class="facts">
       <div><dt>Jízda z Děčína</dt><dd><strong>Asi 2,5–3 hodiny</strong> do Karpnik bez delších zastávek.<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=D%C4%9B%C4%8D%C3%ADn&amp;destination=Prze%C5%82%C4%99cz+Karpnicka%2C+Polska&amp;travelmode=driving">Trasa na Przełęcz Karpnickou</a></dd></div>
@@ -61,7 +79,7 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
   <div class="layout">
     <figure>
       <div class="photo"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Skywalk_auf_der_Hohen_Wand.jpg" alt="Vyhlídka Skywalk nad vápencovou stěnou Hohe Wand" width="2500" height="1614" loading="lazy"></div>
-      <figcaption>Skywalk na Hohe Wand · <a href="https://commons.wikimedia.org/wiki/File:Skywalk_auf_der_Hohen_Wand.jpg">Kstipek</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · zobrazeno s výřezem</figcaption>
+      <figcaption>Skywalk na Hohe Wand · <a href="https://commons.wikimedia.org/wiki/File:Skywalk_auf_der_Hohen_Wand.jpg">Kstipek</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
     </figure>
     <div class="panel"><dl class="facts">
       <div><dt>Jízda z Děčína</dt><dd><strong>Asi 5,5–6 hodin</strong> bez delších zastávek.<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=D%C4%9B%C4%8D%C3%ADn&amp;destination=Sonnenuhrparkplatz%2C+Hohe+Wand&amp;travelmode=driving">Trasa na Sonnenuhrparkplatz</a></dd></div>
