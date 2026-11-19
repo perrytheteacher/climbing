@@ -42,6 +42,10 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
 .photo-details img{max-height:420px}
 .photo-details .ferrata-photo img{max-height:510px}
 @media(max-width:600px){.photo-details{grid-template-columns:1fr}.photo-details img{max-height:none}.photo-details .ferrata-photo img{max-height:540px}}
+.walking-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:.85rem}
+.walking-grid h4{font-size:1.05rem;line-height:1.4;margin:0 0 .35rem}
+.walking-grid a{display:inline-block;margin-top:.45rem}
+@media(max-width:640px){.walking-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -55,7 +59,7 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
     <div class="hero-copy">
       <p class="eyebrow">Oddílové výjezdy 2027</p>
       <h1>Ze Sokolik<br>na Hohe Wand</h1>
-      <p>Ahoj všichni, na Velikonoce bychom vyrazili na dva dny na polskou žulu. V létě si dáme aspoň tři dny na rakouském vápenci, kde můžeme střídat ferraty, jednodélky a vícedélky.</p>
+      <p>Ahoj všichni, rád bych vám nabídl dva oddílové výjezdy na rok 2027. O Velikonocích na dva dny do Sokolik a Rudaw, v létě aspoň na tři dny na Hohe Wand. Budu rád, pokud vám to vyjde a budete se moct přidat. V obou oblastech se dá pěkně vyrazit i pěšky, takže klidně pojeďte i jen na túru.</p>
       <div class="actions"><a class="button" href="#polsko">Velikonoce v Polsku</a><a class="button" href="#rakousko">Léto na Hohe Wand</a></div>
     </div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Hohe_Wand_bei_Stollhof_01.jpg" alt="Vápencové stěny Hohe Wand nad Stollhofem" width="1600" height="1060" fetchpriority="high">
@@ -89,6 +93,13 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
       <figcaption><strong>Sokolik · lezení na žule</strong><br><a href="https://commons.wikimedia.org/wiki/File:Wspinaczka_ska%C5%82kowa_-_Sokolik.jpg">Pitcairn2424</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
     </figure>
   </div>
+  <section class="walking" aria-labelledby="pesky-polsko">
+    <h3 class="media-title" id="pesky-polsko">Kam pěšky</h3>
+    <div class="walking-grid">
+      <article class="panel"><h4>Sokolik Duży a Krzyżna Góra</h4><p>Okruh z Karpnického sedla přes chatu Szwajcarka a obě vyhlídky. Zhruba 5,4 km a 1¾–2 hodiny chůze. Na vyhlídku na Sokoliku vedou kovové schody.</p><a href="https://gorskasciezka.pl/wp-content/uploads/2023/02/Krzyzna-Gora-i-Sokoliki.pdf">Popis okruhu z Karpnického sedla</a></article>
+      <article class="panel"><h4>Zřícenina hradu Bolczów</h4><p>Z nádraží v Janowicích Wielkých po zelené lesem ke zřícenině mezi žulovými skalami. Celkem asi 4,6 km a 1½–2 hodiny chůze tam a zpět.</p><a href="https://hajki.pl/szlaki/zamek-bolczow/">Popis trasy na Bolczów</a></article>
+    </div>
+  </section>
   <h3 class="media-title">Lezení na videu</h3>
   <div class="videos">
     <figure class="video-card">
@@ -104,7 +115,7 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
 <section id="rakousko" class="section"><div class="wrap">
   <p class="eyebrow">Rakousko · červenec nebo srpen</p>
   <h2>Hohe Wand</h2>
-  <p class="intro">Alespoň tři dny. Termín vybereme podle toho, kdy se nás sejde nejvíc. Na místě se můžeme rozdělit podle toho, kdo chce na ferratu, kdo na sportovky a kdo na delší cestu.</p>
+  <p class="intro">Navrhuju alespoň tři dny v červenci nebo srpnu. Termín bychom vybrali podle toho, komu kdy vyhovuje. Na místě si můžeme podle chuti domluvit ferratu, jednodélky, vícedélku nebo pěší výlet po náhorní plošině.</p>
   <div class="layout">
     <figure class="local-photo panorama">
       <a class="photo photo-link" href="https://upload.wikimedia.org/wikipedia/commons/9/9f/Stollhof_from_Hohe_Wand.jpg" aria-label="Zobrazit fotografii v plné velikosti – Výhled z Hohe Wand na Stollhof a okolní kopce"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Stollhof_from_Hohe_Wand.jpg/1280px-Stollhof_from_Hohe_Wand.jpg" alt="Panoramatický pohled z Hohe Wand do údolí na Stollhof" width="6000" height="4000" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/9/9f/Stollhof_from_Hohe_Wand.jpg'"></a>
@@ -132,6 +143,13 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
     <article class="panel"><h3>Jednodélky</h3><p>Na rozlezení nebo samostatný sportovní den se nabízí <a href="https://openclimbing.org/de/relation/18147092">ÖTK-Klettergarten</a>. Obtížnost a délku cesty vybereme podle dvojice a aktuálního průvodce.</p></article>
     <article class="panel"><h3>Vícedélky</h3><p>Pro sehrané dvojice je jednou z možností dobře odjištěná kombinace <a href="https://www.bergsteigen.com/touren/klettern/neuer-innerkoflersteig-hohe-wand/">Neuer Innerkoflersteig + Pannenstreifen</a>, 220 m lezení, 5 UIAA a povinně 4+.</p></article>
   </div>
+  <section class="walking" aria-labelledby="pesky-rakousko">
+    <h3 class="media-title" id="pesky-rakousko">Kam pěšky</h3>
+    <div class="walking-grid">
+      <article class="panel"><h4>Rozhledna od centra přírodního parku</h4><p>Krátká procházka z Naturparkzentrum k osmnáctimetrové rozhledně. Cesta k věži trvá asi 15–20 minut, zpátky se dá jít stejnou cestou.</p><a href="https://www.wieneralpen.at/ausflug-freizeit/naturpark-hohe-wand-aussichtsturm">Informace o rozhledně</a></article>
+      <article class="panel"><h4>Okruh přírodním parkem přes Skywalk</h4><p>Delší okruh po náhorní plošině od parkoviště u zvířecích výběhů. Vede lesem k vyhlídce Skywalk a zpět k centru přírodního parku. Asi 11,6 km a 3 hodiny chůze.</p><a href="https://www.wieneralpen.at/touren/rundwanderung-durch-den-naturpark-hohe-wand">Mapa a popis okruhu přes Skywalk</a></article>
+    </div>
+  </section>
   <h3 class="media-title">Lezení a ferraty na videu</h3>
   <div class="videos">
     <figure class="video-card">
@@ -185,8 +203,8 @@ main section{scroll-margin-top:1.5rem}.section{padding:clamp(3rem,7vw,6rem) 0;bo
 <section id="zajem" class="section join"><div class="wrap">
   <p class="eyebrow">Domluva v oddílu</p>
   <h2>Kdo se přidá?</h2>
-  <p>Napište prosím do oddílové skupiny, jestli máte zájem o Polsko, Hohe Wand, nebo obojí.</p>
-  <ul><li>U Hohe Wand připište, které dny v červenci nebo srpnu vám sedí a jestli vás lákají ferraty, jednodélky nebo vícedélky.</li><li>Pokud nabízíte nebo potřebujete místo v autě, připište to. Ubytování si na oba výjezdy řeší každý sám.</li></ul>
+  <p>Pokud vás některý z výjezdů láká a termín by vám mohl vyjít, budu rád, když se ozvete do oddílové skupiny. Napište, jestli byste se přidali do Polska, na Hohe Wand, nebo na obojí.</p>
+  <ul><li>U Hohe Wand připište, které dny v červenci nebo srpnu vám sedí a jestli vás láká lezení, ferraty nebo turistika.</li><li>Pokud nabízíte nebo potřebujete místo v autě, připište to. Ubytování si na oba výjezdy řeší každý sám.</li></ul>
   <p>Jarda</p>
 </div></section>
 </main>
